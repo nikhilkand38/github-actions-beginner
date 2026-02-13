@@ -33,4 +33,9 @@ jobs:
 
       - name: Run tests
         run: npm test
+      - name: Upload Artifacts
+        uses: actions/upload-artifacts@v4
+        with: 
+          name: Source code
+          path: .
 
